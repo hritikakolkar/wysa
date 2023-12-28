@@ -22,7 +22,7 @@ Go to data/results.xlsx
 python app.py
 ```
 You can also check the app running on my local instance hosted on gradio but you can only access it within 72 hours
-[Live App check here](https://63d4caeef4ca3e7062.gradio.live/)
+[Live App check here](https://aab7626a576a5fc1e0.gradio.live)
 
 ### To train model
 ```
