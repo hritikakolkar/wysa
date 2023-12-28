@@ -40,6 +40,8 @@ python train.py src/config/train.yaml
 python inference.py
 ```
 
+### Do checkout the jupyter notebooks in notebooks folder which contains EDA, Model Training and Inference Notebooks
+
 ### Please do check the reports I generated in wandb
 - [Model Version Comparison](https://api.wandb.ai/links/hritikakolkar/avm8upcx)
 - [Finetuned Model Report](https://api.wandb.ai/links/hritikakolkar/70rvxa5h)
