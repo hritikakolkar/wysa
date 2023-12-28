@@ -1,0 +1,35 @@
+version: "v006"
+config:
+  seed: 0
+  log_batch_step: 10
+  num_epochs: 10
+  num_classes_emotion: 3
+  num_classes_entity: 0
+  pretrained_model_path: "weights/twitter-roberta-base-sentiment-latest"
+  model_save_path: "weights/{{ version }}"
+  model_save_epoch: 2
+  model_architecture: "Roberta"
+  model_class: "EmotionClassifier"
+  dataset_class: "EmotionDataset"
+  batch_size: 8
+  learning_rate: 2e-5
+  max_length: 70
+  test_size: 0.2
+  device: "cuda"  # or "cpu" based on availability
+  emotion_to_id:
+    'No emotion toward brand or product': 0
+    'Positive emotion': 1
+    'Negative emotion': 2
+    "I can't tell": 2
+  entity_to_id:
+    'iPad': 0
+    'iPad or iPhone App': 1
+    'iPhone': 3
+    'Apple': 4
+    'Other Apple product or service': 5
+    'Android': 6
+    'Android App': 7
+    'Google': 8
+    'Other Google product or service': 9
+  average: "macro"
+  zero_division: 1.0
